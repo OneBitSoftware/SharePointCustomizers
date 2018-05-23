@@ -1,0 +1,256 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// Dialog main styles
+.ms-Dialog-header .ms-Dialog-title {
+  display: none;
+}
+
+.ms-Dialog-inner {
+  padding: 0;
+}
+
+.ms-Dialog-actions,
+.ms-Dialog-actionsRight {
+  margin: 0;
+}
+
+.myDialogHeader {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(0, 120, 215);
+  height: 136px;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.myDialogHeader .myDialogTitle {
+  font-size: 18px;
+}
+
+.myDialogHeader.finishHeader {
+  background-color: #fff;
+  color: #000;
+}
+
+// .myDialog {
+//     cursor: default;
+//     position: fixed;
+//     top: calc(50% - 227px);
+//     left: calc(50% - 310px);
+//     width: 620px;
+//     max-width: 620px;
+//     // height: 456px;
+//     // box-shadow: 0 0 5px 2px rgba(51,51,51,.3);
+//     z-index: 20;
+// }
+.myDialog .ms-Dialog-lgHeader {
+  cursor: default;
+  position: fixed;
+  top: calc(50% - 227px);
+  left: calc(50% - 310px);
+  width: 620px;
+  max-width: 620px; // height: 456px;
+  // box-shadow: 0 0 5px 2px rgba(51,51,51,.3);
+  z-index: 20;
+}
+
+.templateImage {
+  height: 274px;
+  background: #fff;
+}
+
+.templateImageFinish {
+  background: #fff;
+}
+
+// Main Content styles
+.FirstRunView-desc {
+  font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  font-weight: 300;
+  width: 100%;
+  background-color: #fff;
+}
+
+.FirstRunView-desc .FirstRunView-descTitle {
+  font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 28px;
+  font-weight: 100;
+  display: block;
+  padding: 8px 24px;
+  line-height: 24pt;
+  color: #333;
+  margin-top: -4px;
+}
+
+.FirstRunView-desc .FirstRunView-descText {
+  font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  line-height: 15pt;
+  padding: 0 24px 22px 24px;
+  color: #333;
+}
+
+.FirstRunView-pagination {
+  display: block;
+  width: 100%;
+  height: 36px;
+  opacity: 1;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.FirstRunView-pagination .btn.isFilled {
+  background-color: rgb(255, 255, 255);
+}
+
+.FirstRunView-pagination .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px 0 8px;
+  border: solid rgb(255, 255, 255) 1px;
+  display: inline-block;
+}
+
+//Button styles
+.FirstRunButtons {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.FirstRunButtons .FirstRunButtonLeft,
+.FirstRunButtons .FirstRunButtonLeftLight,
+.FirstRunButtons .FirstRunButtonRight {
+  font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: 400;
+  width: calc(50% - 1px);
+  height: 25px;
+  display: inline-block;
+  border-top: 1px solid #eaeaea;
+  padding: 20px 0 21px 0;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+}
+
+.FirstRunButtons .FirstRunButtonLeftLight {
+  color: #a6a6a6;
+}
+
+.FirstRunButtons.oneButton .FirstRunButtonRight {
+  float: right;
+}
+
+// .FirstRunButtons .FirstRunButtonLeft {
+//     color: #333;
+// }
+.FirstRunButtons .FirstRunButtonRight {
+  border-left: 1px solid #eaeaea;
+}
+
+.mainContentWrapper {
+  width: 100%;
+  background: #fff;
+  height: 274px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContentWrapper.choiceWrapper .ms-ChoiceField-labelWrapper,
+.mainContentWrapper.choiceWrapper .ms-ChoiceField-field.ms-ChoiceField-field--image::after,
+.mainContentWrapper.choiceWrapper .ms-ChoiceField-field.ms-ChoiceField-field--image::before {
+  display: none !important;
+}
+
+.mainContentWrapper.choiceWrapper .ms-ChoiceField-innerField {
+  padding: 0 !important;
+}
+
+.mainContentWrapper.choiceWrapper .ms-ChoiceField-field.ms-ChoiceField-field--image {
+  padding-top: 0 !important;
+  margin: auto;
+}
+
+.mainContentWrapper.choiceWrapper .choiceGroupElement .ms-ChoiceField {
+  margin: 15px;
+}
+
+.leftColumn {
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+
+.rightColumn {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+// Footer
+.customFooterContainer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  .footerButton button {
+    float: right;
+    margin-right: 200px;
+  }
+}
+
+.customFooterRow {
+  transition: all 1s ease;
+  overflow: hidden;
+  height: 0;
+  display: flex;
+}
+
+.hideFooter {
+  height: 0;
+}
+
+.showFooter {
+  height: 100px !important;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.imageTemplateWrapper {
+  align-self: center;
+  margin-left: 30px;
+}
+
+.textWrapper {
+  align-self: center;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  width: 14%;
+}
+
+.buttonWrapper {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 30px;
+}

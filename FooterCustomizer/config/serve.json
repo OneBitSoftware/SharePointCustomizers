@@ -1,0 +1,29 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://onebitdevelopment.sharepoint.com/_layouts/15/viewlsts.aspx?view=14",
+      "customActions": {
+        "ad1349b9-73b4-4dbe-adb3-c3f9f903200a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "footerCustomzerApp": {
+      "pageUrl": "https://onebitdevelopment.sharepoint.com/_layouts/15/viewlsts.aspx?view=14",
+      "customActions": {
+        "ad1349b9-73b4-4dbe-adb3-c3f9f903200a": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
